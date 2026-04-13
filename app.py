@@ -17,7 +17,7 @@ Scrivi una domanda del tipo:
 - **Dammi informazioni sul locale xyz**
 - **locale xyz**
 
-_(digita **esci** per terminare)_"""
+_(digita **Nuova conversazione** per una nuova chat)_"""
     )
 
 # carica Excel
