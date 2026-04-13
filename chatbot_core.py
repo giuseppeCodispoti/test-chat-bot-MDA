@@ -60,8 +60,11 @@ def info_locale(df, nome_locale):
 
 
 def chatbot(domanda, df):
-    if "locale" in domanda.lower():
-        nome = domanda.split("locale")[-1].strip()
-        return info_locale(df, nome)
+    # cerca la parola "locale" ignorando maiuscole/minuscole
+    match = re.search(r"\blocale\b\s*(.*)", domanda, re.IGNORECASE)
+
+    if match:
+        nome_locale = match.group(1).strip()
+        return info_locale(df, nome_locale)
 
     return "❓ Scrivi: Dammi informazioni sul locale XYZ"
