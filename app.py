@@ -4,7 +4,7 @@ from chatbot_core import chatbot
 
 # titolo
 st.set_page_config(page_title="Chatbot SIAE", page_icon="")
-st.title("📄🎶  Chatbot MDA SIAE – Test Colleghi")
+st.title("📄🎶  Chatbot MDA SIAE – Test ")
 if st.button("🆕 Nuova conversazione"):
     st.session_state.chat = []
     st.rerun()
